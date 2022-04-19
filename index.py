@@ -2,10 +2,10 @@
 
 
 
-print("Sistema de conversação de base decimal para binario, hexadecimal, octodecimal")
+print("Sistema de conversação de base decimal para binario, hexadecimal, octal")
 print("[1] para binario")
 print("[2] para hexadecimal")
-print("[3] para octodecimal")
+print("[3] para octal")
 selected = int(input("Selecione uma das opções acima, ex(1,2,3): "))
 
 if (selected == 1):
