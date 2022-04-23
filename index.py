@@ -5,7 +5,7 @@ print("[3] para octal")
 selected = int(input("Selecione uma das opções acima, ex(1,2,3): "))
 
 def decToBin():
-    print("decimal/binario")
+    print("Decimal/Binario")
     valor = int(input("Digite o valor em decimal: "))
     resultado = "" 
     while(valor != 0 or valor < 0):
@@ -13,9 +13,10 @@ def decToBin():
             valor = valor // 2
             resultado = resultado + str(resto);      
     # resultado.reverse()
-    print(resultado)
+    print(resultado[::-1])
 
 def decToHexa():
+    print("Decimal/Hexadecimal")
     valor = int(input("Digite o valor em decimal: "))
     resultado = "" 
     while(valor != 0 or valor < 0):
@@ -40,7 +41,16 @@ def decToHexa():
     print(resultado[::-1]);
 
 def decToOctal():
-    print("teste3")
+    print("Decimal/Octal")
+    valor = int(input("Digite o valor em decimal: "))
+    resultado = "" 
+    while(valor != 0 or valor < 0):
+            resto = valor % 8
+            valor = valor // 8
+            resultado = resultado + str(resto);      
+    # resultado.reverse()
+    print(resultado[::-1])
+
 
 if (selected == 1):
     decToBin()
